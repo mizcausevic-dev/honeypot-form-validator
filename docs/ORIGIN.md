@@ -20,5 +20,5 @@ The goal was to show that form-abuse prevention belongs in the same conversation
 
 It also reinforces the broader public story:
 
-- Director of Web & GTM Systems
+- Boston Enterprise Technologist
 - Pipeline Scaling & Threat Mitigation
