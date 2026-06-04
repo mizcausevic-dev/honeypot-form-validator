@@ -1,6 +1,9 @@
 # Honeypot Form Validator
 
-TypeScript control plane for honeypot traps, submission heuristics, and UX-safe spam protection across high-intent lead-capture forms.
+Board-ready Kinetic Gain surface for honeypot traps, submission heuristics, and UX-safe spam protection across high-intent lead-capture forms.
+
+- Live: [http://honeypot.kineticgain.com/](http://honeypot.kineticgain.com/)
+- Repo: [https://github.com/mizcausevic-dev/honeypot-form-validator](https://github.com/mizcausevic-dev/honeypot-form-validator)
 
 ## Why this exists
 
@@ -11,6 +14,13 @@ Form abuse is usually treated like a minor spam problem after bad data is alread
 - partner and pricing workflows start reacting to junk instead of real buyer intent
 
 `honeypot-form-validator` models the submission-integrity layer early enough to protect routing, attribution, and pipeline reporting before fake leads become false performance.
+
+## What it includes
+
+- TypeScript control plane for honeypot traps, submission heuristics, and UX-safe spam protection on lead-capture forms
+- synthetic submission lanes across demo, pricing, partner, and contact workflows
+- reusable outputs for spam risk, CRM leakage, rule posture, and trust-safe routing narratives
+- prerendered static site, JSON payloads, screenshots, and docs
 
 ## Routes
 
@@ -53,10 +63,8 @@ Open:
 
 ## Validation
 
-- `npm run build`
-- `npm run test`
-- `npm run demo`
-- `npm run smoke`
+- `npm run verify`
+- `npm run prerender`
 - `npm run render:assets`
 
 ## Docs
