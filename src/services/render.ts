@@ -264,6 +264,41 @@ function layout(title: string, activePath: string, body: string) {
 </html>`;
 }
 
+function renderProductDepth() {
+  return `
+    <section class="section">
+      <div class="cols-3">
+        <article class="panel">
+          <p class="eyebrow">Product depth</p>
+          <h2 class="section-title">What this product does</h2>
+          <p class="section-copy">Honeypot Form Validator turns form submissions into a trust decision before they reach CRM, nurture, partner, or sales workflows. Non-technical leaders see how fake leads distort demand. Technical teams see the validation rules and payload signals behind each decision.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">GTM analyst lens</p>
+          <h2 class="section-title">Where revenue teams use it</h2>
+          <p class="section-copy">Use it on demo, pricing, contact, assessment, and partner-intake forms where bot traffic can inflate conversion, contaminate source reporting, and waste sales follow-up. The surface separates clean submissions, challenged submissions, and hard drops.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Value architecture</p>
+          <h2 class="section-title">Where the money leaks</h2>
+          <p class="section-copy">The system translates spam prevention into CRM leakage, SDR time loss, attribution distortion, and nurture pollution. That makes form protection a revenue-quality control instead of a backend hygiene task.</p>
+        </article>
+      </div>
+      <div class="cols-2">
+        <article class="panel">
+          <p class="eyebrow">Technical proof</p>
+          <h2 class="section-title">What is inspectable</h2>
+          <p class="section-copy">Static routes, API-style outputs, seeded submission lanes, abuse-signal records, validation rules, tests, smoke checks, prerendering, and screenshot generation show how the product works beyond a static landing page.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Portfolio pattern</p>
+          <h2 class="section-title">What these repos have in common</h2>
+          <p class="section-copy">Each Kinetic Gain surface converts operational evidence into board-readable decisions: owner, signal, model, risk, value, route, and verification stay visible together.</p>
+        </article>
+      </div>
+    </section>`;
+}
+
 export function renderOverview() {
   const stats = summary();
   const signalMarkup = abuseSignals()
@@ -346,7 +381,8 @@ export function renderOverview() {
           <tbody>${signalMarkup}</tbody>
         </table>
       </article>
-    </section>`;
+    </section>
+    ${renderProductDepth()}`;
 
   return layout("Honeypot Form Validator", "/", body);
 }
@@ -492,7 +528,8 @@ export function renderDocs() {
           </ul>
         </article>
       </div>
-    </section>`;
+    </section>
+    ${renderProductDepth()}`;
 
   return layout("Honeypot Form Validator - Docs", "/docs", body);
 }

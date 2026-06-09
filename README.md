@@ -15,6 +15,16 @@ Form abuse is usually treated like a minor spam problem after bad data is alread
 
 `honeypot-form-validator` models the submission-integrity layer early enough to protect routing, attribution, and pipeline reporting before fake leads become false performance.
 
+## What this product does
+
+Honeypot Form Validator turns form submissions into a trust decision before they reach CRM, nurture, partner, or sales workflows. It separates clean submissions, challenged submissions, and hard drops so revenue teams can protect conversion quality without adding unnecessary friction for legitimate buyers.
+
+For a SaaS go-to-market analyst, this is useful on demo, pricing, contact, assessment, and partner-intake forms where bot traffic can inflate conversion, contaminate source reporting, and waste follow-up time. It connects submission quality to campaign, routing, and lead-quality outcomes.
+
+For a SaaS value architect, this translates spam prevention into CRM leakage, SDR time loss, attribution distortion, and nurture pollution. The business case is not just fewer spam emails; it is cleaner demand signals and less operational waste.
+
+For technical review, the repo includes static routes, API-style outputs, seeded submission lanes, abuse-signal records, validation rules, tests, smoke checks, prerendering, and screenshot generation. It fits the broader Kinetic Gain pattern: operational evidence becomes a decision surface with owner, signal, risk, value, route, and verification visible together.
+
 ## What it includes
 
 - TypeScript control plane for honeypot traps, submission heuristics, and UX-safe spam protection on lead-capture forms
